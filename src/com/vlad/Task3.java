@@ -1,6 +1,46 @@
 package com.vlad;
 
 public class Task3 {
+    public static void countInt(){
+        int a = -1;
+        int counter=0;
+        while (a!=0){
+            a=a>>>1;
+            counter++;
+        }
+        System.out.println(counter);
+
+    }
+    public static void countByte(){
+        byte a = -1;
+        int counter=0;
+        while (a!=0){
+            a=(byte)( a<<1);
+            counter++;
+        }
+        System.out.println(counter);
+
+    }
+    public static void countLong(){
+        long a = -1;
+        int counter=0;
+        while (a!=0){
+            a=( a>>>1);
+            counter++;
+        }
+        System.out.println(counter);
+
+    }
+    public static void countShort(){
+        short a = -1;
+        int counter=0;
+        while (a!=0){
+            a=(short) ( a<<1);
+            counter++;
+        }
+        System.out.println(counter);
+
+    }
     public static void main(String[] args) {
 
         int number = 21474;
@@ -30,5 +70,8 @@ public class Task3 {
 
 
         System.out.println(counter + " " + counter1 + " " + counter2 + " " + counter3);
-    }
+    countInt();
+    countByte();
+    countLong();
+    countShort();}
 }
